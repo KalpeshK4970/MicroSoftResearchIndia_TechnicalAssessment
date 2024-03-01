@@ -1,5 +1,5 @@
 # MicroSoftResearchIndia_TechnicalAssessment
-Automation to download the latest PDF posted on a website
+
 Utilized selenium ide to record the automation process of downloading the latest Final Offer Documents filed with ROC on the SEBI( Security and Exchange Board of India) website.
 
 ![image](https://github.com/KalpeshK4970/MicroSoftResearchIndia_TechnicalAssessment/assets/121095860/704e4b8a-528c-4d6f-86c7-8af79b9684ef)
@@ -10,10 +10,10 @@ Download the file and open the cmd terminal and run this command  > selenium-sid
 
 
 Code: <br>
--> On recording the automation process i got the target as LinkText: Name of the first company<br>
--> Here is the catch, if the webiste gets updated and new pdf is uploaded if will still install the file with the old file<br>
+-> On recording the automation process i got the target as "LinkText: Name of the first company"<br>
+-> Here is the catch, if the webiste gets updated and new pdf is uploaded it will still install the old pdf file<br>
 -> Hence i changed the target using css selector <br>
--> css=.odd:nth-child(1) .points {if in the bracket i pass the value n i will get the nth row pdf}<br>
+-> css=.odd:nth-child(1) .points {if in the bracket the user pass the value n it will get the nth row pdf}<br>
 ![image](https://github.com/KalpeshK4970/MicroSoftResearchIndia_TechnicalAssessment/assets/121095860/106300eb-6ca5-4d98-a906-5688c566beb8)
 
 
