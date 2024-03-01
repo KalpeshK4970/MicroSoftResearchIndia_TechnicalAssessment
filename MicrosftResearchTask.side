@@ -1,0 +1,106 @@
+{
+  "id": "bfbcf2ad-bcf6-422d-a934-dccdc6eae858",
+  "version": "2.0",
+  "name": "MicrosftResearchTask",
+  "url": "https://www.sebi.gov.in",
+  "tests": [{
+    "id": "346cadcb-c47a-43c2-a8da-31848385f918",
+    "name": "DownloadLatestPDF",
+    "commands": [{
+      "id": "dfaaa949-47dc-4a97-9440-64b49c115311",
+      "comment": "",
+      "command": "open",
+      "target": "/filings.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "61f2607f-daf1-4090-9908-61d68492d995",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "69bfa7c4-3e19-4f46-92f9-7623a6b86325",
+      "comment": "",
+      "command": "click",
+      "target": "css=.list_item:nth-child(2) span",
+      "targets": [
+        ["css=.list_item:nth-child(2) span", "css:finder"],
+        ["xpath=//div[@id='member-wrapper']/section/div/ul/li[2]/a/span", "xpath:idRelative"],
+        ["xpath=//li[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Public Issues >>')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a4aefa3b-983c-4df5-b830-38b4ef2940f5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.list_item:nth-child(3) span",
+      "targets": [
+        ["css=.list_item:nth-child(3) span", "css:finder"],
+        ["xpath=//div[@id='member-wrapper']/section/div/ul/li[3]/a/span", "xpath:idRelative"],
+        ["xpath=//li[3]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Final Offer Documents filed with ROC')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dafa302d-6420-43d0-9ca4-a555a09a7669",
+      "comment": "",
+      "command": "click",
+      "target": "css=.odd:nth-child(1) .points",
+      "targets": [
+        ["linkText=Exicom Tele-Systems Limited - Prospectus", "linkText"],
+        ["css=.odd:nth-child(1) .points", "css:finder"],
+        ["xpath=//a[contains(text(),'Exicom Tele-Systems Limited - Prospectus')]", "xpath:link"],
+        ["xpath=//table[@id='sample_1']/tbody/tr/td[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.sebi.gov.in/filings/public-issues/mar-2024/exicom-tele-systems-limited-prospectus_81907.html')]", "xpath:href"],
+        ["xpath=//td[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Exicom Tele-Systems Limited - Prospectus')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win9914",
+      "windowTimeout": 2000
+    }, {
+      "id": "238e3cc1-e42a-4b67-b97a-454687e317b6",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win9914}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dce4338a-4e2e-4534-92fb-1cea80dd2c13",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "17d96cdd-64b8-45e7-9b3c-bbca121ba275",
+      "comment": "",
+      "command": "click",
+      "target": "id=download",
+      "targets": [
+        ["id=download", "id"],
+        ["css=#download", "css:finder"],
+        ["xpath=//button[@id='download']", "xpath:attributes"],
+        ["xpath=//div[@id='toolbarViewerRight']/button[4]", "xpath:idRelative"],
+        ["xpath=//div[2]/button[4]", "xpath:position"]
+      ],
+      "value": "60000"
+    }]
+  }],
+  "suites": [{
+    "id": "3bb3c135-dbd2-438b-ace1-842c4d68e445",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.sebi.gov.in/"],
+  "plugins": []
+}
